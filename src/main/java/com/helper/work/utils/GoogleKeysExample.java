@@ -14,7 +14,7 @@ import java.security.PrivateKey;
 import java.security.interfaces.RSAPrivateKey;
 import java.util.Date;
 
-public interface Keys {
+public interface GoogleKeysExample {
 
     static String generateWithGoogle() throws IOException {
         GoogleCredential credential =

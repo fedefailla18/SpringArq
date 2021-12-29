@@ -6,12 +6,12 @@ import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class KeysTest {
+class GoogleKeysExampleTest {
 
     @Test
     void generateWithGoogle_notNull() {
         try {
-            final String generated = Keys.generateWithGoogle();
+            final String generated = GoogleKeysExample.generateWithGoogle();
             assertFalse(generated.isEmpty(), "Code generated");
 
         } catch (IOException e) {
