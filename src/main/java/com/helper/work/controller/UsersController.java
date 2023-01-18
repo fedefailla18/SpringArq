@@ -15,8 +15,12 @@ import java.util.List;
 @RequestMapping("/users/")
 public class UsersController {
 
-    @Autowired
     private UsersService usersService;
+
+    @Autowired
+    public UsersController(UsersService usersService) {
+        this.usersService = usersService;
+    }
 
     @GetMapping(path = UserLinks.LIST_USERS)
     public ResponseEntity<?> listUsers() {

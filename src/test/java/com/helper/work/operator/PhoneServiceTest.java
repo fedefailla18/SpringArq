@@ -35,4 +35,5 @@ public class PhoneServiceTest {
         final List<Phone> list = phoneService.list();
         assertEquals(list.size(), 1);
     }
+
 }

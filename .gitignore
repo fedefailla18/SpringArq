@@ -96,6 +96,10 @@ packages/react-devtools-shell/dist
 packages/react-devtools-timeline/dist
 
 credentials.json
+
 src/main/resources/credentials.json
 client_secret.json
+/tokens
+client_secret.json
+
 /tokens
