@@ -9,6 +9,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.function.Supplier;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -34,6 +36,13 @@ public class PhoneServiceTest {
         when(phoneRepository.findAll()).thenReturn(List.of(Phone.builder().build()));
         final List<Phone> list = phoneService.list();
         assertEquals(list.size(), 1);
+    }
+
+    @Test
+    public void supplierWithOptional(){
+        Supplier<Double> doubleSupplier = () -> Math.random();
+        Optional<Double> optionalDouble = Optional.empty();
+        System.out.println(optionalDouble.orElseGet(doubleSupplier));
     }
 
 }

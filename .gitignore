@@ -54,6 +54,12 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+credentials.json
+src/main/resources/credentials.json
+src/main/resources/client_secret.json
+
+tokens
+
 ### VS Code ###
 .vscode/
 
