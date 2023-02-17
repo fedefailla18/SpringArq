@@ -40,8 +40,8 @@ CREATE TABLE repair_type (
 );
 
 create table type_of_jobs (
-                              id UUID NOT NULL,
-                              type VARCHAR(255) NOT NULL,
+                              id UUID ,
+                              type VARCHAR(255) ,
                               PRIMARY KEY (id)
 );
 
@@ -58,15 +58,15 @@ CREATE TABLE repairs (
 );
 
 create table cars (
-                      id UUID NOT NULL DEFAULT gen_random_uuid() PRIMARY KEY ,
-                      users_id UUID NOT NULL,
+                      id UUID  DEFAULT gen_random_uuid() PRIMARY KEY ,
+                      users_id UUID ,
                       FOREIGN KEY (users_id) REFERENCES users(id),
-                      brand VARCHAR(255) NOT NULL,
-                      make VARCHAR(255) NOT NULL,
-                      model VARCHAR(255) NOT NULL,
-                      engine VARCHAR(255) NOT NULL,
-                      trim VARCHAR(255) NOT NULL,
-                      year INT NOT NULL
+                      brand VARCHAR(255) ,
+                      make VARCHAR(255) ,
+                      model VARCHAR(255) ,
+                      engine VARCHAR(255) ,
+                      trim VARCHAR(255) ,
+                      year INT 
 );
 
 CREATE TABLE repair_orders (

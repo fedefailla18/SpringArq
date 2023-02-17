@@ -6,5 +6,8 @@
 
     <include file="db/changelog/v0/20230122-create-first-tables.sql"/>
     <include file="db/changelog/v0/20230121-create-regions.sql"/>
+    <include file="db/changelog/v0/20230122-01-add-regions-in-mechanics.sql"/>
+    <include file="db/changelog/v0/20230129-01-alter-region-zip-codes.sql"/>
+    <include file="db/changelog/v0/20230129-01-alter-user-to-have-address.sql"/>
 
 </databaseChangeLog>

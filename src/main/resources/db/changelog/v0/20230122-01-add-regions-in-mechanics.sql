@@ -7,5 +7,5 @@ add column region_id UUID;
 alter table mechanics add
     FOREIGN KEY (region_id) REFERENCES regions(id);
 
-CREATE INDEX region_id_idx ON address (region_id);
-CREATE INDEX zip_code_idx ON address (zip_code);
+CREATE INDEX region_id_idx ON addresses (region_id);
+CREATE INDEX zip_code_idx ON addresses (zip_code);
